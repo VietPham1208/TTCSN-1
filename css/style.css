@@ -1,0 +1,268 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width: 768px){
+	.none{display:none;}
+	.row-slogan a{font-size:21px;}
+	.nav-menu{font-size:17px;}
+}
+
+@media only screen and (min-width: 768px){
+	.none-flag-cart{display:none;}
+	.none2{display:none;}
+	.row-slogan a{font-size:26px;}
+	.nav-menu{font-size:20px;}
+}
+
+.nav-menu{margin-top:10px;font-weight:600;}
+
+.dropdown{
+	position:relative;
+	display:inline-block;
+}
+
+/*sub-menu*/
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background-color:#f5f5f5;
+}
+
+.dropdown-content a:hover{
+	color:#FFF;
+	background-image: linear-gradient(to bottom, #C00,#C30,#C60);
+	transition:.25s;
+}
+
+.dropdown:hover .dropdown-content{
+	background-color:#FFF;
+	display:block;
+	border:1px solid #C00;
+	border-radius:20px;
+	overflow:hidden;
+	animation-name:Menu-dropdown;
+	animation-duration:0.25s;
+	animation-timing-function:linear;
+}
+
+@keyframes Menu-dropdown{
+	from{height:0px;}
+	to{height:310px;}
+}
+
+.row-slogan{
+	border-radius:20px;
+	height:69px;
+	text-align:center;
+	background-image: linear-gradient(to right,#C69,#C99,#CC9,#CF9);
+	font-family:"Comic Sans MS", cursive;
+}
+
+.row-slogan a{color:#333;display:block;padding:15px;line-height:24px;}
+
+.row-slogan a:hover{color:#333;}
+
+.sub-menu ul{
+	list-style-type:none;
+}
+
+.sub-menu ul li{
+	display:none;
+	position:relative;
+}
+
+.sub-menu ul li a{
+	position:absolute;
+	display:block;
+	text-decoration:none;
+	color:#000;	
+}
+
+.bs{
+	transition:1s;
+	overflow:hidden;
+}
+
+.bs:hover img{
+	transform: scale(1.08);
+	transition:1.5s;	
+}
+
+.product-name{
+	text-decoration:none;
+	color:#000;
+}
+
+.product-name:hover{
+	color:#F3C;
+	text-decoration:none;
+}
+
+#De-muc-Nam{margin-top:20px;font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;font-size:18px;}
+
+#De-muc-Nam a{
+	color:#000;
+}
+
+#De-muc-Nam a:hover{
+	color:#06F;
+	text-decoration:none;
+}
+
+#order-searching{
+	background-color:#666;
+	color:#FFF;
+	border-radius:16px;
+    margin-bottom:20px;
+	}
+#forget-pass a{
+	display:inline-block;
+	color:#000;
+	text-decoration:underline;
+	}
+
+#forget-pass a:hover{
+	background-color:#000;
+	color:#FFF;
+	}
+	
+.checkbox-animation {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-animation input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-animation:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-animation input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-animation input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-animation .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.product-name2{
+	text-decoration:none;
+	color:#000;
+}
+
+.product-name2:hover{
+	color:#F96;
+	text-decoration:none;
+}
+
+.pr-animation img:hover{box-shadow:2px 2px 50px #999;}
+	
+.color ul li{
+	list-style-type:none;
+	display:inline;
+}	
+	
+.color ul li a{
+	width:25px;
+	height:25px;
+	display:inline-block;
+}
+
+.color ul li a:hover{
+	border:1px solid black;
+}
+
+.size ul li{
+	list-style-type:none;
+	display:inline;
+	padding:2px;
+}	
+	
+.size ul li a{
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+	width:25px;
+	height:25px;
+	display:inline-block;
+	border:1px solid grey;
+}
+
+.size ul li a:hover{
+	background-color:#000;
+	color:#FFF;
+}
+
+.button{
+	padding:10px;
+	width:500px;
+	background-color:#333;
+	color:#FFF;
+}
+
+.content{
+	font-size:18px;
+	margin-top:20px;
+}
+
+.img-center{
+	text-align:center;
+}
+
+.tab{
+	font-size:20px;
+}
+
+
+
